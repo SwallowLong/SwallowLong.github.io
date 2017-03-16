@@ -1,3 +1,3 @@
 
-fuck and fuck yo    u!
+fuck and fuck you!
 
