@@ -1,3 +1,2 @@
 
-fuck and fuck you too!
-
+fuck and fuck you too! lucky
