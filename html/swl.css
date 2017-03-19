@@ -1,0 +1,36 @@
+body {
+	position: relative;
+	left: 10%;
+	right: 10%;
+	top: 10%;
+	width: 80%;
+	padding: 5%;
+}
+a {
+	text-decoration: none;
+	color: #3011fc;
+}
+.header {
+	position: relative;
+	margin: 10px 0;
+}
+.header h1,h3 {
+	display: inline;
+}
+.header h3 {
+	opacity: 0.5;
+}
+.header a {
+	text-decoration: none;
+	color: #000;
+}
+.header a:hover {
+	text-decoration: underline;
+}
+.article {
+	margin: 10px;
+}
+p {
+	padding: 2% 0;
+	width: 80%;
+}

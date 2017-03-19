@@ -1,0 +1,55 @@
+.header {
+	position: relative;
+	width: 40%;
+	left: 30%;
+	top: 10px;
+}
+.header h1,h3 {
+	display: inline;
+}
+.header h3 {
+	opacity: 0.5;
+}
+.header a {
+	text-decoration: none;
+	color: #000;
+}
+.header a:hover {
+	text-decoration: underline;
+}
+.article {
+	position: relative;
+	width: 40%;
+	left: 30%;
+	margin: 5% 0;
+	padding: 1%;
+	border: 1px solid #999;
+	border-radius: 10px;
+}
+.first {
+	padding: 1%;
+	border-bottom: 1px solid #999;
+}
+.first h3 {
+	display: inline;
+}
+.first p {
+	display: inline;
+	opacity: 0.7;
+}
+.first a {
+	text-decoration: none;
+	color: #3011fc;
+}
+.first a.top {
+	color: #000;
+}
+.second {
+	padding: 5% 0;
+}
+.third a {
+	padding:2% 0; 
+	text-decoration: none;
+	color: #3011fc;
+}
+

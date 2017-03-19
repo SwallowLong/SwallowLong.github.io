@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SwallowLong</title>
+    <link rel="stylesheet" type="text/css" href="swl.css">
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <a href="https://swallowlong.github.io/" title="点击返回主页">
+                Note
+            </a>
+        </h1>
+        <h3>
+            在装B的路上越走越远
+        </h3>
+    </div>
+    <div>        
+    <a href="git.txt">
+        Notepad原件
+    </a>
+    </div>
+    <div class="article">
+        <h3>Git</h3>
+        <p>
+            mkdir
+            <br>
+            cd
+            <br>
+            pwd
+            <br>
+            git init
+            <br>
+            git add 
+            <br>
+            git commit -m ""
+            <br>
+            git status
+            <br>
+            git diff
+            <br>
+            git log
+            <br>
+            git reflog
+            <br>
+            git reset --hard commit-id/HEAD
+            <br>
+            git checkout --
+            <br>
+            git reset HEAD 
+            <br>
+            rm
+            <br>
+            git rm
+            <br>
+            ssh-keygen -t rsa -C email@ .com
+            <br>
+            git branch
+            <br>
+            git checkout -b 
+            <br>
+            git branch name
+            <br>
+            git checkout
+            <br>
+            git merge 
+            <br>
+            git branch -d 
+            <br>
+            git push -u origin master
+            <br>
+            git push origin 
+            <br>
+            gir push origin tagname 
+            <br>
+            git pull
+            <br>
+            git tag name 
+            <br>
+            git tag 
+            <br>
+            git show
+            git tag -a tagname -m "" commit-id
+            <br>
+            git tag -d
+            <br>
+            git push origin :refs/tags/tagname
+            <br>
+            git stash
+            <br>
+            git stash pop
+            <br>
+            git branch --set-upstream branch-name origin/branch-name
+            <br>
+            git config --global alias.lg log
+            <br>
+        </p>
+        <p>
+            创建分支：git branch name
+            <br>
+            切换分支：git checkout name
+            <br>
+            创建+切换；git checkout -b name
+            <br>
+            创建并切换后，分支是基于现有的master即是工作区和暂存区后
+            <br>
+            合并某分支到当前分支：git merge name
+            <br>
+            删除分支；git branch -d name
+            <br>
+            查看分支；git branch
+            <br>
+        </p>
+        <p>
+            创建远程库的时候发的疯：
+            <br>
+                1、MLGB的id_rsa.pub,找了github_rsa.pub结果就是已经使用，fuck
+                <br>
+                解决方法：ssh-keygen -t rsa -C 1679187550@qq.com利用此语句生成ssh搞TM
+                <br>
+                2、git push -u origin master时，和原本github中的冲突，fuck
+                <br>
+                解决方法：将两边先同步，主要是git remote add origin 的时候草TM不知道什
+                          么鬼，真的是，最后我TM也不换地址了，就TM丢在C盘不动了，草
+                          <br>
+                总结下就是：ssh-keygen -t rsa -C 1679187550@qq.com
+                <br>
+                            github创建repository，接着git remote add origin 
+                            <br>ssh那一长串（是你创建的repository中的）
+                            <br>
+                            git push -u origin master 第一次
+                            <br>
+                git push origin master             同步，也可以叫推送，可能看起来更直白点
+                            <br>
+        </p>
+        <p>
+            git config --global user.name “Your Name”
+            <br>
+            git config --global use.email "email@qq.com"
+            <br>
+            用来填写你的email和name
+            <br>
+            </p>
+            <p>
+            mkdir name
+            <br>
+            cd name
+            <br>
+            pwd
+            <br>
+            mkdir用来创建项目名，即是说这是个根目录，cd是用来表示进入某个目录下，当你进入的文件夹名有空格时要使用“”将文件名包裹，否则失败，pwd是用来查看位置
+            <br>
+        </p>
+        <p>
+            git init
+            <br>
+            git add file
+            <br>
+            git commit -m "..."
+            <br>
+            git init用来生成一个git仓库，add添加文件到仓库，add添加时TMD一定要有这个文件，你TM没有还在这问老子怎么加不出来，老子要喷火了，你吃屎都没用，commit提交到仓库，-m则是对你这次提交的申明，那么add和commit的主要区别是什么呢？add是将创建的文件加入到暂存区，而commit则是将暂存区中的文件全部都提交到仓库，即提交到master的分支上，所以，commit并不是一次只能提交一次，而是可以提交很多，就是git-commit能提交的只有已经进入到暂存区里面的文件，而在工作区的则无法提交
+            <br>
+        </p>
+        <p>
+            git status
+            <br>
+            git diff files
+            <br>
+            git status 查看有哪些要提交却没提交的修改，掌握你工作区的状态，git diff files查看要修改文件具体改变了那些地方，查看没问题后即可git add files，然后git status即可查看修改是否包括了files，git commit-m即可
+            <br>
+        </p>
+        <p>
+            cat files
+            查看文件内容
+            <br>
+            git log
+            <br>
+            git reflog
+            <br>
+            git reset --hard commit-id/HEAD
+            <br>
+            git log查看生成的版本，方便回到过去的版本（可以在git             log后使用--pretty=oneline来将版本排列为一行）
+            <br>
+            git reflog查看使用过的命令行，想回到倒回前的版本，因为倒回后，现版本就log不到
+            就只能使用reflog查看用过的命令行，然后通过commit号来确认装B
+            <br>
+            git reset --hard commit-id 回到相应的版本，和前面的-m（用来确认你是要这个版本号）            联合装B，完美倒流，还可以使用HEAD^会到上版本，HEAD^^回到上两个
+            版本，当然还有HEAD~n回到n版本前，readme.txt的内容就改变了
+            <br>
+        </p>
+        <p>
+            git checkout -- file
+            <br>
+            git reset HEAD file
+            <br>
+            当你的文件还在工作区并没有add到暂存区时，你可以通过git checkout --             file来丢弃工作区的更改，当你已经add到暂存区了的话，则先git reset HEAD file将TM
+            拉回工作区，在通过git checkout -- file 
+            将TMD丢弃，当然既然我能将人踹走，那必定也能将人请回来，因为git checkout --             file是回到该file最近一次修改的状
+            态，如果你已经git commit了，那就git log/git reflog然后git reset --hard HEAD^/            commit-id，爸爸带你拯救
+            世界 59bf97e  093a1af
+            <br>
+        </p>
+        <p>
+            rm file
+            <br>
+            git rm file
+            <br>
+            rm删除工作区，git rm 删除了commit了，没办法救世，除非rm但没git rm则可以通过git             checkout -- flie拯救世界，--后的空格很重要
+            <br>
+        </p>
+        <p>
+            ssh-keygen -t rsa -C 1679187550@qq.com
+            <br>
+            生成id_rsa.pub
+            <br>
+        </p>
+        <p>
+            git merge 和git branch -d 配合装B，一个合并，一个合并完删
+            <br>
+            git push origin             master使用时，当你的file还在工作区时是无法在github的官网显示出你的修改的
+            <br>
+        </p>
+        <p>
+            git log --graph --pretty=oneline显示解决版本冲突后的合并图
+            <br>
+
+            分支冲突时，直接改file加入暂存区然后加入加入master即可然后推送到远程库
+            <br>
+
+            推送的是你本地合并后的master而不是你本地没合并的其他分支
+            <br>
+        </p>
+        <p>
+            git merge --no-ff -m "merge with no-ff" name,合并branch时，使用--no-ff强制不使用            ，则会生成一个版本，即在合并后你仍然能看到
+            你被合并的分支形成的版本，因为要形成版本，所以要加入-m，相当说使用Fast             forward则是直接没线2个版本，而--no-ff则是会在2个版本
+            中间加一个合并分支的版本，而不是合并后直接去除这个版本的痕迹
+            <br>
+        </p>
+        <p>
+            git stash
+            <br>
+            git stash pop
+            <br>
+            git stash 创建的分支是基于master，也即是第三区，若你在分支上修改了内容，但现在需            要另一个修改，两者时间冲突，只能重新创建一个
+            分支，但分支若没add和commit则会直接作用在工作区，而master和分支是共用一个工作区，            则可能给你的master带来麻烦，即将还没完成的
+            branch可能add和commit到master上，而git stash则可以避免这个问题，将此分支单独存放            一会，而工作区则是干净的，可以放心创建新的
+            branch，而git stash pop则是在解决完bug后，重新手头的工作，则使用git stash             pop将存起来的branch调出来，并删除在其暂存位置的stash
+            内容，当然你也可以先git stash apply恢复，然后在使用git stash                     drop来删除，不过明显git stash pop 更简单
+        <br>
+    </p>
+    <p>
+        放弃一个没完成的分支git branch -D name
+        <br>
+    </p>
+    <P>
+        git push origin branch-name
+        <br>
+        git pull
+        <br>
+        git checkout -b branch-name origin/branch-name抓取github上的某分支到本地
+        <br>
+        git branch --set-upstream branch-name origin/branch-name
+        <br>
+        git push origin branch-name推送，一次OK那好，没OK，报冲突，怎么破，git         pull抓取下来，失败则git branch --set-upstream branch-name origin/branch-name,
+        然后在推送OK团队协作差不多就是这样的
+        <br>
+    </P>
+    <p>
+        git tag v1
+        <br>
+        git tag -a v1 -m "" commit_num
+        <br>
+        git tag
+        <br>
+        git show tagname
+        <br>
+        git tag v1，添加v1名的标签至最新的commit，git tag -a v1 -m "" commit_num,将版本号为commit_num的添加v1标签，标签说明-m "",git tag看有什么标签，git show tagname查看标签内容
+        <br>
+    </p>
+    <p>
+        git push origin tagname
+        <br>
+        git push origin tags
+        <br>
+        git tag -d tagname
+        <br>
+        git push origin :refs/tags/tagname
+        <br>
+        推送标签，删除标签，删除远程库标签则要先删除本地，在push远程，：refs/tags/        tagname中的tags是固定模式不可去
+        <br>
+    </p>
+    <p>
+        git config --global alias.name '原命令'
+        <br>
+        自己偷懒神器
+    </p>
+    </div>
+    <div class="footer">
+        <a href="../index.html">
+            返回主页
+        </a>
+    </div>
+</body>
+</html>
