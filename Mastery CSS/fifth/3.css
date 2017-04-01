@@ -1,0 +1,37 @@
+a {
+	position: relative;
+	display: block;
+	width: 200px;
+	height: 20px;
+	/*
+	text-indent: -9999px;
+	将a中的文本隐藏
+	*/
+	background-image: url(pic-3.png);
+	background-repeat: no-repeat;
+	color: #fff;
+	text-decoration: none;
+}
+body>a {
+	/*移动的是背景图片而不是a block*/
+	background-position: -200px -300px;
+}
+a#header+a {
+	background-position: -10px -300px;
+}
+span {
+	display: none;
+}
+a:hover span {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 70px;
+}
+a[href^="http:"]/* 属性选择器*/ {
+	padding-right: 40px;
+	/*为什么加多的padding任然没什么
+	反应看起来，因为图片已经到头了，
+	而且没有repeat即铺展，所以看不见，
+	但确实有*/
+}

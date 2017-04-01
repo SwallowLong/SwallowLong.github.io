@@ -1,0 +1,15 @@
+fieldset {
+	width: 40%;
+	padding: 10px 0 70px 10px;
+	border-color: transparent;
+	background-color: #dbece3;
+	position: relative;
+}
+/*设置label将字隐藏*/
+label {
+	position: absolute;
+	left: -1000em;
+}
+select {
+	width: 20%;
+}

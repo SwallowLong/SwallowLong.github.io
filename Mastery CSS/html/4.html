@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>css小结</title>
+    <link rel="stylesheet" type="text/css" href="wwy.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>精通CSS</h1>
+        </header>
+        <div class="content">
+            <nav>
+                <li><img src="../icon-1.png">
+                <h2>目录</h2>
+                    <ul>
+                        <li><a href="../merge.html" title="前言">前言</a></li>
+                        <li><a href="1.html" title="第1章">第1章</a></li>
+                        <li><a href="2.html" title="第2章">第2章</a></li>
+                        <li><a href="3.html" title="第3章">第3章</a></li>
+                        <li><a href="4.html" title="第4章"  rel="select">第4章</a></li>
+                        <li><a href="5.html" title="第5章">第5章</a></li>
+                        <li><a href="6.html" title="第6章">第6章</a></li>
+                        <li><a href="7.html" title="第7章">第7章</a></li>
+                        <li><a href="8.html" title="第8章">第8章</a></li>
+                        <li><a href="9.html" title="第9章">第9章</a></li>
+                        <li><a href="10.html" title="第10章">第10章</a></li>
+                        <li><a href="11.html" title="第11章">第11章</a></li>
+                    </ul>
+                </li>
+            </nav>
+            <div class="primary">
+                <div class="primary">
+                    <h2>第四章</h2>
+                    <p>
+                        本章主要学习了以下内容：
+                    </p>
+                    <ol>
+                        <li>固定宽度和可变宽度的圆角框</li>
+                        <li>滑动门技术</li>
+                        <li>多个背景图像和border-radius属性</li>
+                        <li>CSS投影</li>
+                        <li>不透明度和RGBa</li>
+                        <li>让PNG适用IE的老版本</li>
+                        <li>视差滚动</li>
+                        <li>图像替换</li>
+                    </ol>
+                    <p>
+                        这中间讲的圆角框是用背景图片定位实现的，这可能是由于此书是在2010年5月出版，现在我不知道公司是不是，但是网上看的时候，我觉得应该比较喜欢用border-radius的多，但是不可否认这是对思维的一种开拓，能让你死板的思维稍微活跃点，这才是重点
+                    </p>
+                    <p>
+                        滑动门技术：这里仅讲述我个人的理解，我认为就是在你的文本中设置应该很大的背景，而这个背景并不会全部在文本中显露出来，在文本的一端设置一个小的背景图片，position来定位，这样若是文本扩大了的话，小图片就会相应的随着文本移动，达到所谓滑动门的效应
+                    </p>
+                    <p>
+                        多个背景的问题自己参考CSS 3，border-radius这个本来也是应该自己参考，提一下-moz-和-webkit-的问题，就举个栗子，-moz-border-radius、-webkit-border-radius、border-radius三者同时出现，还有个border-image的问题，我倒是没去深究，大家有空可以去好好理解下
+                    </p>
+                    <p>
+                        CSS投影：现在大家应该都知道box-shadow和text-shadow，这里讲的是纯css的，主要是利用背景图片和margin的负属性，当然你用relative的负属性也是一样的效果，等会看个简单的demo就自然明白了，我个人是这个属性的强迫症患者，看起来会有点立体感
+                    </p>
+                    <p>
+                        不透明度opacity：opacity属性指的是不透明度，也就是说当opacity=0时，他就是不透明度为0，而透明度为1即100%，也就是完全透明的，而在IE中还是要注意它的老版本是不支持的所以记得加上filter: alpha(opacity=0),在IE的code中opacity的值不只是0~1，而是0~100；不过opacity使用的时候，是不分主次的即文本背景完全都一起opacity，所以有了RGBa，单单的应对于背景而文本独善其身
+                    </p>
+                    <p>
+                        PNG透明度的问题，我倒是也没弄太清楚，可能是因为还没怎么接触过吧
+                    </p>
+                    <p>
+                        图像替换：即background的url属性和position+repeat属性，一般还会加点padding
+                    </p>
+                </div>
+                <div class="secondary">
+                    <h2>其中出现的一些网站</h2>
+                    <ul>
+                        <li>
+                            <p>sIFR:
+                                <a href="http://www.shauninman.com/plete/2004/04/ifr-revisited-and-revised" title="sIFR">http://www.shauninman.com/plete/2004/04/ifr-revisited-and-revised</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>要想在站点使用sIFR，先要下载新的版本在此网站:
+                                <a href="http://novemberborn.net/sifr3" title="在站点使用sIFR">http://novemberborn.net/sifr3</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>前面说过PNG并没搞懂，所以留个自己有兴趣可以去看看:
+                                <a href="http://www.twinhelix.com/css/iepngfix" title="PNG">http://www.twinhelix.com/css/iepngfix</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>山顶角(这个我也是云里雾里):
+                                <a href="http://www.simplebits.com" title="山顶角">http://www.simplebits.com</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>自己动手做的一些测试，献丑献丑，TMD既然没加返回键....</p>
+                        </li>
+                        <li>
+                            <p>CSS视差效果(利用背景定位的百分比不同，达到随浏览器窗口变化的大小不同，而达到运动的效果):
+                                <a href="../fourth/1.html" title="视差效果">good luck</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>CSS投影：
+                                <a href="../fourth/2.html" title="CSS投影">box-shadow</a>
+                            </p>
+                        </li>               
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a href="../../index.html">返回主页</a>
+        </footer>
+    </div>
+</body>
+</html>

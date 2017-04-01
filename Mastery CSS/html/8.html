@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>css小结</title>
+    <link rel="stylesheet" type="text/css" href="wwy.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>精通CSS</h1>
+        </header>
+        <div class="content">
+            <nav>
+                <li><img src="../icon-1.png">
+                <h2>目录</h2>
+                    <ul>
+                        <li><a href="../merge.html" title="前言">前言</a></li>
+                        <li><a href="1.html" title="第1章">第1章</a></li>
+                        <li><a href="2.html" title="第2章">第2章</a></li>
+                        <li><a href="3.html" title="第3章">第3章</a></li>
+                        <li><a href="4.html" title="第4章">第4章</a></li>
+                        <li><a href="5.html" title="第5章">第5章</a></li>
+                        <li><a href="6.html" title="第6章">第6章</a></li>
+                        <li><a href="7.html" title="第7章">第7章</a></li>
+                        <li><a href="8.html" title="第8章" rel="select">第8章</a></li>
+                        <li><a href="9.html" title="第9章">第9章</a></li>
+                        <li><a href="10.html" title="第10章">第10章</a></li>
+                        <li><a href="11.html" title="第11章">第11章</a></li>
+                    </ul>
+                </li>
+            </nav>
+            <div class="primary">
+                <div class="primary">
+                    <h2>第八章</h2>
+                    <p>
+                        本章主要学习了以下内容：
+                    </p>
+                    <ol>
+                        <li>让设计在页面中水平居中</li>
+                        <li>创建两列和三列的基本布局(基本上会两列自然就会三列了)</li>
+                        <li>创建固定宽度、流式和弹性布局</li>
+                        <li>创建高度相等的列</li>
+                        <li>CSS框架和CSS系统</li>
+                    </ol>
+                    <p>
+                        居中：这个问题so easy，margin：0 auto;如果你想的是一个固定高度的文本在窗口正中间，那就margin：auto;当然如果你设置了定位的话，请将其4个方位都设置为0，当然你设置成一个比较小的值也行，注意要相等
+                    </p>
+                    <p>
+                        position中的auto,即position的奇异的流体特性，当其中一个有固定值时，另一个则自动计算，当内容设置了宽度，而left、right都设置了值但宽度不够时，这时则看你是从左往右读，还是从右往左读，我这就以从左往右读为例，则以左边的为标准，那这时的margin是怎么运转的呢：
+                    </p>
+                    <ol>
+                        <li>只设置了left、right时，宽度受限的情况下，以left为标准，否则正常
+                        </li>
+                        <li>即设置了left、right又设置了margin时，宽度受限时，以margin-left为标准
+                        </li>
+                        <li>即设置了left、right又设置了margin，且不是使用数值，而是使用auto时，则在left基础上居中
+                        </li>
+                        <li>所以当你想要无论何时都居中时，就讲left、right设置为0即可，若是只设置了left或right则会如何呢？这以left为例，当你只设置了left时，则就会到最原始的，left+margin-left
+                        </li>
+                    </ol>
+                    <p>
+                        两列布局：设置好宽度左右浮动，overflow或clear即可，三列即在两列基础上在进行一次两列
+                    </p>
+                    <p>
+                        固定、流式和弹性布局：说白了，也是一样，只是固定宽度最简单，流式你稍微换成百分数，弹性则是换成字号比例，弹性主要针对一些喜欢放大字体的用户
+                    </p>
+                    <p>
+                        对于框架，我觉得主要针对特定的站点，而且必须使用表现性的标记，与表现、标记分开有点子不符，而且有点像早期的表格设计
+                    </p>
+                </div>
+                <div class="secondary">
+                    <h2>其中出现的一些网站</h2>
+                    <ul>
+                        <li>
+                            <p>查看浏览器常用窗口尺寸的工具:
+                            <a href="http://liquidfold.net" title="查看浏览器常用窗口尺寸的工具">http://liquidfold.net</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>固定布局:
+                            <a href="../pages layout/fixed/1.html" title="固定布局">
+                            固定布局</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>流式布局:
+                            <a href="../pages layout/water/1.html" title="流式布局">流式布局</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>弹性布局(为了方便更改，只是将主box的宽度设置成了em，其余的任然使用的是百分数):
+                            <a href="../pages layout/tan/1.html" title="弹性布局">弹性布局</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a href="../../index.html">返回主页</a>
+        </footer>
+    </div>
+</body>
+</html>

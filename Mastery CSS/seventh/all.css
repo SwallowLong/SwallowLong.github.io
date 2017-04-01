@@ -1,0 +1,52 @@
+fieldset {
+	width: 40%;
+	padding: 10px;
+	margin: 10px auto;
+	border-color: transparent;
+	background-color: #bdece3;
+}
+input,select,textarea {
+	cursor: pointer;
+}
+div {
+	margin: 10px;
+	position: relative;
+}
+label {
+	float: left;
+	width: 10em;
+}
+input {
+	width: 30%;
+}
+select {
+	width: 10em;
+}
+label[for^="remember"] {
+	width: auto;
+}
+label[for="year"],[for="mouth"] {
+	position: absolute;
+	left: -1000em;
+}
+#data {
+	width: 3em;
+	margin-right: 5px;
+}
+#year {
+	width: 5em;
+	margin-left: 5px;
+}
+h2 {
+	font-size: 1em;
+	width: 10em;
+	float: left;
+}
+.col {
+	float: left;
+	width: 8em;
+}
+.col label {
+	padding: 5px;
+	cursor: pointer;
+}

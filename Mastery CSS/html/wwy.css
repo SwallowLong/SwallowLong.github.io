@@ -1,0 +1,146 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #4a4a4a;
+}
+.wrapper {
+	width: 76.8%;
+	margin: 0 auto;
+	min-width: 50em;
+}
+h2 {
+	padding: 10px;
+	font-size: 1.25em;
+	text-shadow: 1px 1px 1px #fff;
+	-moz-text-shadow: 1px 1px 1px #fff;
+	-webkit-text-shadow: 1px 1px 1px #fff;
+	color: #333;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+a[rel="select"]{
+	background: #b4d7d0;
+}
+header,footer {
+	width: 100%;
+	height: 70px;
+	background: #3a3a3a;
+}
+header h1 {
+	font-size: 1.5em;
+    padding: 20px 40px;
+}
+footer a {
+	float: right;
+	margin: 20px;
+	color: #fff;
+}
+.content {
+	padding-bottom: 100px;
+	overflow: hidden;
+	min-height: 600px;
+	background: #d8fbf7;
+}
+nav {
+	width: 24%;
+	float: left;
+	position: relative;
+}
+img {
+	position: relative;
+    left: 8.7%;
+	width: 40px;
+}
+nav h2 {
+	position: absolute;
+	top: 10px;
+	left: 60px;
+}
+nav ul {
+	position: absolute;
+	left: -1000em;
+	width: 100%;
+	list-style-type: none;
+	padding-bottom: 40px;
+	background: #bdece3;
+}
+nav>li {
+	padding: 10px 0;
+	cursor: pointer;
+}
+nav>li:hover,nav>li:active,nav>li:focus {
+	background: #bdece3;
+}
+nav>li:hover ul,nav>li:active ul,nav>li:focus ul {
+	left: auto;
+}
+nav a {
+	padding: 10px 70px;
+	color: #333;
+}
+nav a:hover,a:active,a:focus {
+	text-shadow: 1px 1px 1px #fff;
+	-moz-text-shadow: 1px 1px 1px #fff;
+	-webkit-text-shadow: 1px 1px 1px #fff;
+	text-decoration: underline;
+	background: #a6daec;
+}
+a:hover,a:active,a:focus {
+	background: transparent;
+}
+.primary {
+	width: 71.875%;
+	float: right;
+}
+.primary .primary {
+	width: 60.87%;
+	float: left;
+	padding: 2.89%;
+	word-wrap: normal;
+	text-shadow: 1px 1px 1px #fff;
+	-moz-text-shadow: 1px 1px 1px #fff;
+	-webkit-text-shadow: 1px 1px 1px #fff;
+}
+.primary ol {
+	list-style-position: inside;
+}
+.primary ol li {
+	padding: 5px;
+}
+.primary p {
+	text-indent: 2em;
+	line-height: 20px;
+}
+.primary .primary h2+p {
+	text-indent: 0;
+}
+.primary .secondary {
+	width: 27.5%;
+	float: right;
+	padding: 2.89%;
+	padding-bottom: 1000px;
+	margin-bottom: -1000px;
+	background: #bdece3;
+}
+.secondary ul {
+	list-style: none;
+}
+.secondary p {
+	padding: 10px;
+	text-indent: 0em;
+	word-break: break-all;
+}
+.secondary a {
+	display: inline;
+	padding: 5px;
+	text-decoration: underline;
+	color:  #237692;
+}
+.secondary a:hover,a:active,a:focus {
+	font-weight: bold;
+}
+

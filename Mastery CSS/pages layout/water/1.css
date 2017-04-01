@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #4a4a4a;
+}
+.wrapper {
+	width: 68.91%;
+	margin: 0 auto;
+	min-width: 50em;
+	max-width: 125em;
+}
+p{
+	text-indent: 2em;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+header,footer {
+	clear: both;
+	height: 71px;
+	width: 100%;
+	background-color: #3a3a3a;
+}
+p#top {
+	font-size: 1.5em;
+	float: left;
+	margin: 20px 0 0 20px;
+}
+footer a {
+	float: right;
+	display: block;
+	margin: 20px 20px;
+	color: #fff;
+	/*加inline是为了避免IE中的双外边距浮动产生的bug*/
+	display: inline;
+}
+.content {
+	overflow: hidden;
+	padding-bottom: 10px;
+	background-color: #d8fbf7;
+}
+nav {
+	width: 25%;
+	float: left;
+	background-color: #bdece3;
+	display: inline;
+}
+nav ul {
+	list-style-type: none;
+}
+nav li {
+	padding: 10px 30px;
+}
+.primary {
+	width: 72.82%;
+	float: right;
+	display: inline;
+	word-break: break-all;
+}
+.primary .primary {
+	width: 59.7%;
+	float: left;
+	display: inline;
+	padding: 10px 10px;
+}
+.primary .secondary {
+	width: 29.07%;
+	float: right;
+	padding: 2.63%;
+	padding-bottom: 1000%;
+	/*此处利用的是margin负属性，使得
+	虽然该文本中已经padding出去了，但
+	是其由于margin回来，所以不占位置，
+	但是要注意要与前面的overflow相呼应
+	不然就会覆盖下文的内容*/
+	margin-bottom: -1000%;
+	display: inline;
+	background-color: #bdece3;
+}
+h2 {
+	font-size: 1.25em;
+	padding: 10px;
+}
+

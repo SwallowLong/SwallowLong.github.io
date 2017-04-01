@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>css小结</title>
+	<link rel="stylesheet" type="text/css" href="wwy.css">
+</head>
+<body>
+    <div class="wrapper">
+    	<header>
+    		<h1>精通CSS</h1>
+    	</header>
+    	<div class="content">
+    		<nav>
+    		    <li><img src="../icon-1.png">
+    		    <h2>目录</h2>
+    			    <ul>
+                        <li><a href="../merge.html" title="前言">前言</a></li>
+    				    <li><a href="1.html" title="第1章">第1章</a></li>
+    				    <li><a href="2.html" rel="select" title="第2章">第2章</a></li>
+    				    <li><a href="3.html" title="第3章">第3章</a></li>
+    				    <li><a href="4.html" title="第4章">第4章</a></li>
+    				    <li><a href="5.html" title="第5章">第5章</a></li>
+    				    <li><a href="6.html" title="第6章">第6章</a></li>
+    				    <li><a href="7.html" title="第7章">第7章</a></li>
+    				    <li><a href="8.html" title="第8章">第8章</a></li>
+    				    <li><a href="9.html" title="第9章">第9章</a></li>
+    				    <li><a href="10.html" title="第10章">第10章</a></li>
+    				    <li><a href="11.html" title="第11章">第11章</a></li>
+    				</ul>
+    			</li>
+    		</nav>
+    		<div class="primary">
+    			<div class="primary">
+    			    <h2>第二章</h2>
+    				<p>
+    					本章主要学习了以下内容：
+    				</p>
+    				<ol>
+    					<li>常见的选择器</li>
+    					<li>高级选择器</li>
+    					<li>新的CSS 3选择器</li>
+    					<li>特殊性和层叠的作用</li>
+    					<li>计划和维护样式表</li>
+    					<li>如何在代码中加注释</li>
+    				</ol>
+    				<p>
+    					本章讲了css中怎么减少选择器和规则，利用一些高级选择其，如> , +等避免复杂性，一些注释问题，方便团队协作
+    				</p>
+    				<p>
+    					常用的选择器：主要是类型选择器和后代选择器，即元素选择器和后代选择器，还有ID选择器和类选择器，伪类选择器(这里的：first-child选择器的使用要注意，前文讲了就解释了)和通用选择器(至于选择器实例这里就不详细举例了，看不懂的自行面壁....)
+    				</p>
+    				<p>
+    					高级选择器：像子选择器和相邻同胞选择器，子选择器(符号为">")要注意的是只选择元素的直接后代，什么是直接后代，就是你儿子而不是你孙子，相邻同胞选择器(符号为"+")注意利用此选择器，一定要是在同一个父元素下，不然是不会其效果的
+    				</p>
+    				<p>
+    					属性选择器：这个怎么说，反正是挺有意思的一个选择器吧(符号为"[]"),也分为几种，"^"、"$"、"*"、"~"分别是头、尾、包含，我个人觉得"~"和"*"两者有点相似，但似乎"*"范围更加的广，当然还有一种就是全属性选择，不过由于类命名时，可能会有多个属性值，so全属性....你know
+    				</p>
+    				<p>
+    					层叠和特殊性：既然有层叠自然有特殊性问题，这是不可置否的，而特殊性吗就看a,b,c,d这4个数了，a表示行内，b表示ID选择器总数，c为类、伪类以及属性选择器，d吗，自然是最烂大街的元素和伪元素的数量了，若是哪天你发现自己设置了样式，但却没有表现，不妨看看是否是那处的样式特殊性更高，这个问题曾经也是阻碍过我不少次的....
+    				</p>
+                    <p>
+                        注释是个好习惯，而且一个好的设计代码结构也很重要，这个我已经在注意了，但毕竟没有和别人协作过，所以可能还有许多问题....  
+                    </p>
+    			</div>
+    			<div class="secondary">
+    				<h2>其中出现的一些网站</h2>
+    				<ul>
+    					<li>
+    					    <p>在线CSS优化器:
+    					    <a href="http://www.cssoptimiser.com" title="在线CSS优化器">http://www.cssoptimiser.com</a>
+    					    </p>
+    					</li>
+    					<li>
+    					    <p>文件压缩相关:
+    					    <a href="http://tinyurl.com/8w9rp" title="文件压缩相关">
+    					    http://tinyurl.com/8w9rp</a>
+    					    </p>
+    					</li>
+    					<li>
+    					    <p>CSSDoc项目(旨在为样式表开发一套标准的注释语法):
+    					    <a href="http://cssdoc.net" title="CSSDoc项目">http://cssdoc.net</a>
+    					    </p>
+    					</li>
+                        <li>
+                            <p>
+                                其实我也没去这些网站逛逛，只是方便以后会用到，留个方便....
+                            </p>
+                        </li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    	<footer>
+    		<a href="../../index.html">返回主页</a>
+    	</footer>
+    </div>
+</body>
+</html>

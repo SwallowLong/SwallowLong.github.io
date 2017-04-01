@@ -1,0 +1,36 @@
+fieldset {
+	width: 40%;
+	padding: 10px;
+	border-color: transparent;
+	background-color: #bdece3;
+	position: relative;
+	text-shadow: 1px 1px 1px #fff;
+}
+input,select {
+	cursor: pointer;
+}
+label {
+	position: absolute;
+	left: -1000em;
+}
+label.data {
+	/*硬式宽度是为了文本对齐*/
+	width: 10em;
+	/*否则是行内元素设置不了宽度*/
+	display: inline-block;
+	/*relative是为了使容器预留label的位置，
+	否则absolute将覆盖内容*/
+	position: relative;
+	/*将left：-1000em抵消*/
+	left: auto;
+}
+select {
+	width: 10em;
+	margin: 0.5em;
+}
+#data {
+	width: 3em;
+}
+#year {
+	width: 5em;
+}

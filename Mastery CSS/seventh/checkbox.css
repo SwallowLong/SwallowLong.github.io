@@ -1,0 +1,20 @@
+fieldset {
+	width: 40%;
+	padding: 20px 10px;
+	border-color: transparent;
+	background-color: #bdece3;
+}
+h2 {
+	float: left;
+	width: 10em;
+	font-size: 1em;
+}
+label {
+	cursor: pointer;
+	display: block;
+	padding: 5px 0;
+}
+.col {
+	float: left;
+	width: 8em;
+}
