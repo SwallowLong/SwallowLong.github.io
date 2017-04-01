@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>css小结</title>
+	<link rel="stylesheet" type="text/css" href="merge.css">
+</head>
+<body>
+    <div class="wrapper">
+    	<header>
+    		<h1>精通CSS</h1>
+    	</header>
+    	<div class="content">
+    		<nav>
+    		    <li><img src="icon-1.png">
+    		    <h2>目录</h2>
+    			    <ul>
+                        <li><a href="" title="前言" rel="select">前言</a></li>
+    				    <li><a href="html/1.html" title="第1章">第1章</a></li>
+    				    <li><a href="html/2.html" title="第2章">第2章</a></li>
+    				    <li><a href="html/3.html" title="第3章">第3章</a></li>
+    				    <li><a href="html/4.html" title="第4章">第4章</a></li>
+    				    <li><a href="html/5.html" title="第5章">第5章</a></li>
+    				    <li><a href="html/6.html" title="第6章">第6章</a></li>
+    				    <li><a href="html/7.html" title="第7章">第7章</a></li>
+    				    <li><a href="html/8.html" title="第8章">第8章</a></li>
+    				    <li><a href="html/9.html" title="第9章">第9章</a></li>
+    				    <li><a href="html/10.html" title="第10章">第10章</a></li>
+    				    <li><a href="html/11.html" title="第11章">第11章</a></li>
+    				</ul>
+    			</li>
+    		</nav>
+    		<div class="primary">
+    			<div class="primary">
+    			    <h2>站在巨人的肩上</h2>
+    				<p>
+    					Standing on Shoulders of Giants
+    				</p>
+                    <p>
+                        就我个人而言，我觉得这个小模板是很重要的，这次阅读此书也是很有意义，怎么说，通过这次的阅读，让我从心理上产生了一种喜欢，没错不只是表面，我TMD想写出比这书上更好看的页面，想和书上看起来一样思维清晰，码起代码来有如神助，MD这TM才是真的装B啊，有木有
+                    </p>
+    				<ol>
+    					<li>Andy Budd: 
+                            <p>
+                                国际顶尖网页设计师，网页咨询公司Clearleft的创始人之一
+                            </p>
+                        </li>
+    					<li>Simon Collison: 
+                            <p>
+                                创办了组名的Erskine Design公司，管理着8支卓越而富创造力的Web设计团队
+                            </p>
+                        </li>
+    					<li>Cameron Moll
+                            <p>
+                                设计过大量优秀网站，常在有关用户界面设计的各种国内和国际会议上发言，创办了Authentic Jobs公司，我个人觉得他在三人中最幽默....
+                            </p>
+                        </li>
+    				</ol>
+    				<p>
+    					注意：在写HTML时，不可过分的使用div、span等没有意义的标签，也不可过分使用class、id等，这是结构不合理的初警告，最好多使用有意义的轻量标记语言，最好达到禁用了所有的样式，用户任然能过顺利的阅读和浏览这个网站
+    				</p>
+    				<p>
+    					遇到的问题：本来应该是1~2小时的任务，活生生用了5~6小时，主要问题还是在nav的处理上，在这个悬停出的问题上，似乎如果不是父子元素关系的话，既然必须悬停而不能脱下来选择章节，用的是创建下拉列表的方法，所以一开始倒是没注意父元素的问题，why？兄弟元素既然不行，可以到达hover的目标，但是鼠标却不能下拉选择章节
+    				</p>
+    				<p>
+    					还有在处理secondary的问题时，在为什么链接没有直接出现在文本后面耽误了会儿，主要是未设置break-all，所以链接直接换到了下一行，白痴啊....
+    				</p>
+    				<p>
+    					在使用结合选择器时，既然以为.primary,nav a:hover这是将primary和nav中的a：hover的表现，实则是.primary和nav a:hover这两个的表现，而不是.primary a:hover和nav a:hover这两个选择器的表现
+    				</p>
+    				<p>
+    					使用:first-child伪类的时候，错误的理解了父元素第一个的含义，例如一个父元素包含了一个h1和2个p元素，h1在第一位，而这个时候使用p:first-child是不能编辑p元素的样式的，只能h1:first-child编辑h1的样式
+    				</p>
+                    <p>
+                        在后续的html中，完全可以使用此模本，只需要注意不要忘记更换rel="select"的位置，以及注意href时的文件夹即可
+                    </p>
+                    <p>
+                        还有一个未解决的问题，那就a的伪类的继承问题，很奇怪继承了nav中的背景设置，但改的text-decoration却没有继承，似乎只有背景是通用的，why？通过实例测试，我发现不是背景通用，而是不管什么前缀的a的伪类，所有的a的伪类都会继承，除非你设置和他不同的，这也是醉了
+                    </p>
+                    <p>
+                        a的伪类的继承问题，设置了a的伪类设置后，若以后的a都会继承，要想不同就改变，或者说根本就没特殊性，就是一样的，只要一个里面出现了就全都出现，如果加了父元素的和只是单独的a伪类都有相同的属性，则优先继承单独的a伪类设置，奇怪奇怪，似乎:active属性又有点特殊，似乎他跟是不是独行侠没有关系，谁后出现就继承谁，这点倒是和元素选择器很像，所以综合起来就是，将这个独行侠放置在你需要特殊设置的a伪类以后，或者你不设置:active的伪类属性
+                    </p>
+    			</div>
+    			<div class="secondary">
+    				<h2>本书中的示例</h2>
+    				<ul>
+    					<li>
+    					    <p>示例代码和图像下载网址1:
+    					    <a href="http://www.cssmastery.com" title="示例代码和图像下载网址1">http://www.cssmastery.com</a>
+    					    </p>
+    					</li>
+    					<li>
+    					    <p>示例代码和图像下载网址2:
+    					    <a href="http://www.friendsofed.com" title="示例代码和图像下载网址2">
+    					    http://www.friendsofed.com</a>
+    					    </p>
+    					</li>
+    					<li>
+    					    <p>Roma Italia实例研究(源代码文件获取则是在网址2中)：
+    					    <a href="http://roma.cssmastery.com" title="Roma Italia实例研究">http://roma.cssmastery.com</a>
+    					    </p>
+    					</li>
+    					<li>
+    					    <p>Climb the Mountains实例研究:
+    					    <a href="http://www.climbthemountains.com/cssm" title="Climb the Mountains实例研究">http://www.climbthemountains.com/cssm</a>
+    					    </p>
+    					</li>
+                        <li>
+                            <p>
+                                不要问我这些网站对不对，MD这书上是这样滴，至于对不对....这书毕竟10年出版，自己把握；也不要问我为什么这么绿，我听见雨滴落在青青草地....
+                            </p>
+                        </li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    	<footer>
+    		<a href="../index.html">返回主页</a>
+    	</footer>
+    </div>
+</body>
+</html>

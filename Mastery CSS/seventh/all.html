@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>表单元素简单汇总</title>
+	<link rel="stylesheet" type="text/css" href="all.css">
+</head>
+<body>
+    <form>
+    	<fieldset>
+    		<legend>Your Contact Details</legend>
+    		<div>
+    			<label for="name">Name(Required):</label>
+    		    <input type="text" name="name" id="name" />
+    		</div>
+    		<div>
+    			<label for="email">Email Address:</label>
+    		    <input type="text" name="email" id="email" />
+    		</div>
+    		<div>
+    			<label for="web">Web Address:</label>
+    		    <input type="text" name="web" id="web" />
+    		</div>
+    	</fieldset>
+    	<fieldset>
+    		<legend>Comments</legend>
+    		<label for="message">Message(Requires):</label>
+    		<textarea name="message" id="message"></textarea>
+    	</fieldset>
+    	<fieldset>
+    		<legend>Remember Me</legend>
+    		<label for="remember-yes"><input type="radio" name="remember" id="remember-yes" />Yes</label>
+    		<label for="remember-no"><input type="radio" name="remember" id="remember-no" />No</label>
+    	</fieldset>
+    	<fieldset>
+    		<legend>Pessonal Information</legend>
+    		<div>
+    			<label for="city">Place of live:</label>
+    		    <select id="city" name="city">
+    			    <option value="bj">BeiJing</option>
+    			    <option value="sh">ShangHai</option>
+    			    <option value="hz">HangZhong</option>
+    		    </select>
+    		</div>
+    		<div>
+    			<label for="data">Data of Birth:</label>
+    		    <input type="text" name="data" id="data" value="28" />
+    		    <label for="mouth">Mouth:</label>
+    		    <select name="mouth" id="mouth">
+    			    <option value="January">January</option>
+    			    <option value="February">February</option>
+    			    <option value="March">March</option>
+    		    </select>
+    		    <label for="year">Years:</label>
+    		    <input type="text" name="year" id="year" value="1996">
+    		</div>
+    		<div>
+    			<h2>Favorite Color:</h2>
+    		    <div class="col">
+    			    <label><input type="checkbox" name="red" id="red" value="red" />red</label>
+    			    <label><input type="checkbox" name="gary" id="gary" value="gary" />gary</label>
+    			    <label><input type="checkbox" name="pink" id="pink" value="pink" />pink</label>
+    			    <label><input type="checkbox" name="green" id="green" value="green" />green</label>
+    		    </div>
+    		    <div class="col">
+    			    <label><input type="checkbox" name="orange" id="orange" value="orange" />orange</label>
+    			    <label><input type="checkbox" name="purple" id="purple" value="purple" />purple</label>
+    			    <label><input type="checkbox" name="blue" id="blue" value="blue" />blue</label>
+    			    <label><input type="checkbox" name="other" id="other" value="other" />other</label>
+    		    </div>
+    		</div>  		
+    	</fieldset>
+    </form>
+</body>
+</html>

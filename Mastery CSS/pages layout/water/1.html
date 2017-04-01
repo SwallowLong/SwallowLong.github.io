@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>流式布局</title>
+	<link rel="stylesheet" type="text/css" href="1.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+    	<p id="top">精通CSS</p>
+    </header>
+    <div class="content">
+    	<nav>
+    		<ul>
+    			<li><a href="">Home</a></li>
+    			<li><a href="">About</a></li>
+    			<li><a href="">News</a></li>
+    			<li><a href="">Fuck</a></li>
+    		</ul>
+    	</nav>
+    	<div class="primary">
+    	    <div class="primary">
+    		    <h2>设计要点</h2>
+    		    <p>
+    		        固定宽度：总宽度为920px，导航栏230px，主内容区域670px，而在主内容区域内，主div400px，次div230px，距离右边缘20px的固定宽度的三列布局
+    		    </p>
+    		    <p>
+    		        流式布局：即是通过百分数来进行尺寸的设置，可以相对浏览器窗口进行伸缩，但要注意设置min-width和max-width不然可能导致太小或太大，最后导致阅读困难
+    		    </p>
+    		    <p>
+    		        具体方法：可以通过查看浏览器统计数据确定最常用的窗口尺寸，然后根据固定宽度算出百分数，查看工具Liquid Fold（http://liquidfold.net）,设计一个总宽度为920px的页面，大多数用户浏览器窗口是1250px，所以为920/1250=73.6%，接下来主内容的div宽度为670px，总宽度920px，的72.82%，然后算出nav为25%，主内容和导航元素之间有2.18%的隔离带，而在主内容区域中，主div宽度为400px，400/670=59.7%,算出次div为34.33%，距离边缘20px，即2.63%
+    		    </p>
+    		    <p>
+    		        弹性布局：流式布局虽然可以充分利用空间，但是容易造成行太长或太短，而使用弹性布局则相对好很多，因为弹性布局是相对字体尺寸即默认的1emfont-size，一般为1em=16px，当然也可以自己设置利用百分数，这在弹性布局时，很明显就能看出，不过也不是所有的宽度都是以em来设置，可以总宽度使用em，而小的任然使用百分数，这样更加的灵活和更加容易维护
+    		    </p>
+    	    </div>
+    	    <div class="secondary">
+                <p>
+                    弹性布局的一些补充：由于针对的是font，所以只有改变font才会改变布局，而且对于一些视力弱的人，即使放大字体观看任然不会改变布局
+                </p>
+    		    <p>
+                    这一段利用的是margin的负属性与overflow：hidden配合，再加上大数字的padding使得背景能大面积的覆盖，有什么修改意见，欢迎大家pull我
+                </p>
+    	    </div>
+    	</div>
+    </div>
+    <footer>
+    	<a href="#top">返回顶部</a>
+    </footer>
+</div>
+</body>
+</html>

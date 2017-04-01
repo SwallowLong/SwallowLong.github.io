@@ -1,0 +1,95 @@
+img {
+	width: 300px;
+	height: 360px;
+}
+.image {
+	width: 300px;
+	height: 360px;
+	position: relative;
+}
+/*first：只需要框的方法
+.image a {
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 50px;
+	top: 60px;
+	left: 185px;
+	padding: 0.2em 0.5em;
+	text-indent: -1000px;
+	border: 1px solid transparent;
+}
+a:hover {
+	border-color: #fff;
+}
+*/
+/*second：css高级映射
+利用span来产生突出感，重点在image
+要relative，在note中利用left和margin-left达到居中
+a {
+	position: absolute;
+	display: block;
+    top: 60px;
+    left: 175px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    color: #000;
+}
+span.outline {
+	display: block;
+	border: 1px solid transparent;
+}
+span.inline {
+	display: block;
+	width: 60px;
+	height: 70px;
+	border: 1px solid transparent;
+}
+span.note {
+	position: absolute;
+	bottom: -2em;
+	width: 5em;
+	background: #eee;
+	padding: 0.2em 0.5em;
+	left: -1000em;
+	margin-left: -3em;
+	text-align: center;
+}
+a:hover span.outline {
+	border-color: #000;
+}
+a:hover span.inline {
+	border-color: #fff;
+}
+a:hover span.note {
+	left: 30px;
+}
+*/
+.hotspot {
+	display: block;
+	width: 60px;
+	height: 70px;
+	position: absolute;
+	top: 60px;
+	left: 175px;
+	border: 1px solid transparent;
+}
+.link {
+	position: absolute;
+	display: block;
+	width: 6em;
+	right: -7em;
+	top: 0;
+	color: #000;
+}
+a:hover .hotspot {
+	border-color: #fff;
+}
+a:hover .link {
+	color: #7681f3;
+}
+.link:before {
+    content: "\00bb";
+    padding: 0 0.4em;
+}
+

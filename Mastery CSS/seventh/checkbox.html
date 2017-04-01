@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>复选框灵活应用</title>
+	<link rel="stylesheet" type="text/css" href="checkbox.css">
+</head>
+<body>
+    <form>
+    	<fieldset>
+    		<legend>Checkbox</legend>
+    		<!--加h2是因为给复选框前加个说明，不然就是一个复选按
+    		钮，和label，so加了个h2，但还是要给h2设置font-size才
+    		好，不然会影响美观-->
+    		<h2>favorite color:</h2>
+    		<div class="col">
+    			<label><input type="checkbox" name="red" id="red">red</label>
+    			<label><input type="checkbox" name="gary" id="gary">gary</label>
+    			<label><input type="checkbox" name="pink" id="pink">pink</label>
+    			<label><input type="checkbox" name="green" id="green">green</label>
+    		</div>
+    		<!--为什么要设2个同样class的div，因为要分为2列，所以使用div
+    		分为2个同样的列，这样好设置-->
+    		<div class="col">
+    			<label><input type="checkbox" name="orange" id="orange">orange</label>
+    			<label><input type="checkbox" name="purple" id="purple">purple</label>
+    			<label><input type="checkbox" name="blue" id="blue">blue</label>
+    			<label><input type="checkbox" name="other" id="other">other</label>
+    		</div>
+    	</fieldset>
+    </form>
+</body>
+</html>
