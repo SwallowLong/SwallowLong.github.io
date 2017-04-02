@@ -19,8 +19,8 @@ h2 {
 	color: #333;
 }
 a {
-    display: block;
-    text-decoration: none;
+	display: block;
+	text-decoration: none;
 }
 a[rel="select"]{
 	background: #b4d7d0;
@@ -52,7 +52,7 @@ nav {
 }
 img {
 	position: relative;
-    left: 8.7%;
+	left: 8.7%;
 	width: 17.4%;
 }
 nav h2 {
@@ -71,6 +71,7 @@ nav ul {
 nav>li {
 	padding: 10px 0;
 	cursor: pointer;
+	list-style: none;
 	background: #bdece3;
 }
 nav a {
@@ -100,7 +101,7 @@ a:hover,a:active,a:focus {
 	-moz-text-shadow: 1px 1px 1px #fff;
 	-webkit-text-shadow: 1px 1px 1px #fff;
 	max-height: 50em;
-    overflow: auto;
+	overflow: auto;
 }
 .primary ol {
 	list-style-position: inside;
