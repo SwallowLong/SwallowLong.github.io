@@ -19,8 +19,13 @@ h2 {
 	color: #333;
 }
 a {
+<<<<<<< Updated upstream
     display: block;
     text-decoration: none;
+=======
+	display: block;
+	text-decoration: none;
+>>>>>>> Stashed changes
 }
 a[rel="select"]{
 	background: #b4d7d0;
@@ -51,7 +56,11 @@ nav {
 }
 img {
 	position: relative;
+<<<<<<< Updated upstream
     left: 8.7%;
+=======
+	left: 8.7%;
+>>>>>>> Stashed changes
 	width: 17.4%;
 }
 nav h2 {
@@ -98,7 +107,11 @@ a:hover,a:active,a:focus {
 	-moz-text-shadow: 1px 1px 1px #fff;
 	-webkit-text-shadow: 1px 1px 1px #fff;
 	max-height: 50em;
+<<<<<<< Updated upstream
     overflow: auto;
+=======
+	overflow: auto;
+>>>>>>> Stashed changes
 }
 .primary ol {
 	list-style-position: inside;
