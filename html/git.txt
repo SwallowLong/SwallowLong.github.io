@@ -7,7 +7,8 @@
 
 
 
-
+''包含有空格的文件名
+要想gh-pages的页面更新记得将master一起推送
 mkdir
 cd
 pwd

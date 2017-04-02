@@ -58,25 +58,20 @@ img {
 nav h2 {
 	position: absolute;
 	top: 10px;
-	left: 60px;
+	left: 26.1%;
 }
 nav ul {
 	position: absolute;
-	left: -1000em;
 	width: 100%;
 	list-style-type: none;
-	padding-bottom: 40px;
+	padding-bottom: 1000px;
+	margin-bottom: -1000px;
 	background: #bdece3;
 }
 nav>li {
 	padding: 10px 0;
 	cursor: pointer;
-}
-nav>li:hover,nav>li:active,nav>li:focus {
 	background: #bdece3;
-}
-nav>li:hover ul,nav>li:active ul,nav>li:focus ul {
-	left: auto;
 }
 nav a {
 	padding: 10px 70px;
