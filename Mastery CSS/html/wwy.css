@@ -99,7 +99,7 @@ a:hover,a:active,a:focus {
 	text-shadow: 1px 1px 1px #fff;
 	-moz-text-shadow: 1px 1px 1px #fff;
 	-webkit-text-shadow: 1px 1px 1px #fff;
-	max-height: 40em;
+	max-height: 45em;
 	overflow: auto;
 }
 .primary ol {
@@ -122,7 +122,7 @@ a:hover,a:active,a:focus {
 	padding-bottom: 1000px;
 	margin-bottom: -1000px;
 	background: #bdece3;
-	max-height: 40em;
+	max-height: 45em;
 	overflow: auto;
 }
 .secondary ul {
