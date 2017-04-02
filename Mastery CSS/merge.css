@@ -51,7 +51,7 @@ nav {
 }
 img {
 	position: relative;
-        left: 8.7%;
+    left: 8.7%;
 	width: 17.4%;
 }
 nav h2 {
@@ -98,8 +98,8 @@ a:hover,a:active,a:focus {
 	text-shadow: 1px 1px 1px #fff;
 	-moz-text-shadow: 1px 1px 1px #fff;
 	-webkit-text-shadow: 1px 1px 1px #fff;
-	max-height: 50em;
-        overflow: auto;
+	max-height: 40em;
+    overflow: auto;
 }
 .primary ol {
 	list-style-position: inside;
@@ -121,6 +121,8 @@ a:hover,a:active,a:focus {
 	padding-bottom: 1000px;
 	margin-bottom: -1000px;
 	background: #bdece3;
+	max-height: 40em;
+	overflow: auto;
 }
 .secondary ul {
 	list-style: none;
