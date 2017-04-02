@@ -41,7 +41,7 @@ git tag -a tagname -m "" commit-id
 git tag -d
 git push origin :refs/tags/tagname
 git stash
-git stash pop
+git stash pop（可以在不同的分支上取出来）
 git branch --set-upstream branch-name origin/branch-name
 git config --global alias.lg log
 
